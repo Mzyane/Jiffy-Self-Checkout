@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Jiffy - Smart self-checkout technology for modern retailers. Revolutionize your store with faster throughput, reduced labor costs, and enhanced customer satisfaction."/>
+<title>Jiffy - Revolutionize Checkout in Your Store</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Inter:wght=400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2b6cee",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111722",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <script src="theme.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white antialiased transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-300 dark:border-white/10 px-4 sm:px-10 py-3 sticky top-0 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md z-50 transition-colors duration-200 -mx-4 sm:-mx-10 md:-mx-20 lg:-mx-40">
+<div class="flex items-center gap-4">
+<a href="index.html" class="flex items-center gap-4">
+<img src="logo-dark.png" data-logo-light="logo-light.png" data-logo-dark="logo-dark.png" alt="Jiffy Logo" class="h-10 w-auto">
+<h2 class="text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Jiffy</h2>
+</a>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-900 dark:text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white transition-colors text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-gray-900 dark:text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white transition-colors text-sm font-medium leading-normal" href="how-it-works.html">How It Works</a>
+<a class="text-gray-900 dark:text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white transition-colors text-sm font-medium leading-normal" href="features.html">Features</a>
+<a class="text-gray-900 dark:text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white transition-colors text-sm font-medium leading-normal" href="about.html">About</a>
+<a class="text-gray-900 dark:text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white transition-colors text-sm font-medium leading-normal" href="contact.html">Contact</a>
+</div>
+<button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-white/10 transition-colors" aria-label="Toggle theme">
+<span id="theme-icon" class="material-symbols-outlined text-gray-900 dark:text-white">light_mode</span>
+</button>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]" href="contact.html">
+<span class="truncate">Request a Demo</span>
+</a>
+</div>
+</header>
+<main class="flex flex-col gap-10 md:gap-16">
+<!-- HeroSection -->
+<section class="px-4 py-16 md:py-24 mt-10">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Left Column - Content -->
+<div class="flex flex-col gap-6 text-center md:text-left">
+<div class="flex flex-col gap-3">
+<p class="text-primary text-sm font-bold uppercase tracking-wide">Born at GUtech, Built for Oman</p>
+<h1 class="text-gray-900 dark:text-white text-5xl md:text-6xl font-black leading-tight tracking-tight">
+Checkout in a <span class="text-primary">Jiffy</span>
+</h1>
+<p class="text-gray-700 dark:text-white/80 text-lg md:text-xl leading-relaxed">
+No queues. No scanners. No waiting. Smart AI-powered checkout technology that transforms the retail experience.
+</p>
+</div>
+
+<!-- Badges -->
+<div class="flex flex-wrap gap-3 justify-center md:justify-start">
+<span class="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-semibold">
+<span class="material-symbols-outlined !text-base align-middle mr-1">emoji_events</span>
+COMEX 2025
+</span>
+<span class="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-semibold">
+<span class="material-symbols-outlined !text-base align-middle mr-1">verified</span>
+Ministry Incubator
+</span>
+</div>
+
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
+<a class="flex items-center justify-center gap-2 rounded-lg h-14 px-8 bg-primary hover:bg-primary/90 transition-all hover:scale-105 text-white text-base font-bold shadow-lg shadow-primary/30" href="contact.html">
+Request a Demo
+<span class="material-symbols-outlined !text-xl">arrow_forward</span>
+</a>
+<a class="flex items-center justify-center gap-2 rounded-lg h-14 px-8 bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition-colors text-gray-900 dark:text-white text-base font-bold border border-gray-300 dark:border-white/20" href="how-it-works.html">
+How It Works
+</a>
+</div>
+</div>
+
+<!-- Right Column - Visual Element -->
+<div class="flex items-center justify-center">
+<div class="relative w-full max-w-md">
+<!-- Decorative background -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-500/20 rounded-3xl blur-3xl"></div>
+<!-- Logo/Brand Element -->
+<div class="relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-[#192233] dark:to-[#111722] rounded-3xl p-12 border border-gray-300 dark:border-white/10 shadow-2xl">
+<img src="logo-dark.png" data-logo-light="logo-light.png" data-logo-dark="logo-dark.png" alt="Jiffy Smart Checkout" class="w-full h-auto opacity-90">
+<div class="mt-6 text-center">
+<div class="text-4xl font-black text-gray-900 dark:text-white mb-2">60% Faster</div>
+<div class="text-sm text-gray-600 dark:text-white/60 uppercase tracking-wide">Checkout Speed</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Quick Stats -->
+<section class="px-4 py-16 bg-gradient-to-b from-transparent to-gray-50/50 dark:to-transparent">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-black text-gray-900 dark:text-white mb-3">Proven Results</h2>
+<p class="text-gray-600 dark:text-white/60 text-lg">Real impact for Omani retailers</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+<div class="group relative overflow-hidden text-center p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-xl hover:scale-105 hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="text-primary text-5xl font-black mb-3">60<span class="text-3xl">%</span></div>
+<div class="text-gray-700 dark:text-white/70 text-sm font-semibold uppercase tracking-wide">Faster Checkout</div>
+</div>
+</div>
+<div class="group relative overflow-hidden text-center p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-xl hover:scale-105 hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="text-primary text-5xl font-black mb-3">0<span class="text-3xl">sec</span></div>
+<div class="text-gray-700 dark:text-white/70 text-sm font-semibold uppercase tracking-wide">Queue Wait Time</div>
+</div>
+</div>
+<div class="group relative overflow-hidden text-center p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-xl hover:scale-105 hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="text-primary text-5xl font-black mb-3">100<span class="text-3xl">%</span></div>
+<div class="text-gray-700 dark:text-white/70 text-sm font-semibold uppercase tracking-wide">Automated Scanning</div>
+</div>
+</div>
+<div class="group relative overflow-hidden text-center p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-xl hover:scale-105 hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="text-primary text-5xl font-black mb-3">24/7</div>
+<div class="text-gray-700 dark:text-white/70 text-sm font-semibold uppercase tracking-wide">System Reliability</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Value Proposition -->
+<section class="px-4 py-16">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-black mb-4 text-gray-900 dark:text-white">The Future of Retail is Here</h2>
+<p class="text-gray-700 dark:text-white/70 text-lg max-w-2xl mx-auto">Jiffy brings cutting-edge smart checkout technology to Omani retailers</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-primary/50">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary !text-4xl">bolt</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Lightning Fast</h3>
+<p class="text-gray-700 dark:text-white/60 text-base leading-relaxed">Customers walk through our smart gateway and items are automatically scanned in seconds. No manual scanning required.</p>
+</div>
+</div>
+<div class="group relative p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-primary/50">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary !text-4xl">shield_with_heart</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Secure & Reliable</h3>
+<p class="text-gray-700 dark:text-white/60 text-base leading-relaxed">AI-powered computer vision ensures accurate transactions while minimizing shrinkage and protecting your revenue.</p>
+</div>
+</div>
+<div class="group relative p-8 rounded-2xl bg-gradient-to-br from-gray-100 to-white dark:from-[#192233] dark:to-[#111722] border border-gray-300 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-primary/50">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary !text-4xl">integration_instructions</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Easy Integration</h3>
+<p class="text-gray-700 dark:text-white/60 text-base leading-relaxed">Seamlessly integrates with your existing POS systems and payment platforms. We handle installation and training.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How It Works Preview -->
+<section class="px-4 py-10 bg-gray-100 dark:bg-[#192233]/30">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-black mb-4">How It Works</h2>
+<p class="text-gray-900 dark:text-gray-600 dark:text-white/70 text-lg">Three simple steps to transform your checkout experience</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-2xl font-black text-primary mx-auto mb-4">1</div>
+<h3 class="text-xl font-bold mb-2">Shop Normally</h3>
+<p class="text-gray-900 dark:text-gray-600 dark:text-white/60">Customers browse and add items to their cart as usual</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-2xl font-black text-primary mx-auto mb-4">2</div>
+<h3 class="text-xl font-bold mb-2">Auto-Scan at Exit</h3>
+<p class="text-gray-900 dark:text-gray-600 dark:text-white/60">Our gateway scans all items instantly as they walk out</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-2xl font-black text-primary mx-auto mb-4">3</div>
+<h3 class="text-xl font-bold mb-2">Payment Complete</h3>
+<p class="text-gray-900 dark:text-gray-600 dark:text-white/60">Automatic payment processing in seconds - done!</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a href="how-it-works.html" class="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold">
+Learn More About Our Technology
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Featured Recognition -->
+<section class="px-4 py-10">
+<div class="max-w-4xl mx-auto">
+<div class="rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 p-8 md:p-12">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold mb-4">NATIONALLY RECOGNIZED</span>
+<h2 class="text-2xl md:text-3xl font-black mb-4">From Student Project to National Innovation</h2>
+<p class="text-gray-900 dark:text-gray-700 dark:text-white/80 mb-6">Born at the German University of Technology in Oman (GUtech), Jiffy has evolved from a graduation project into a nationally recognized startup, selected for Oman's prestigious Scientific Incubator Program.</p>
+<div class="flex flex-wrap gap-4 mb-6">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="text-gray-900 dark:text-gray-700 dark:text-white/80">Ministry Incubator</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary">campaign</span>
+<span class="text-gray-900 dark:text-gray-700 dark:text-white/80">Featured on Oman FM</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary">storefront</span>
+<span class="text-gray-900 dark:text-gray-700 dark:text-white/80">COMEX 2025 Showcase</span>
+</div>
+</div>
+<a href="about.html" class="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold">
+Read Our Story
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="flex-shrink-0">
+<div class="w-48 h-48 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary !text-8xl">emoji_events</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="px-4 py-10">
+<div class="max-w-3xl mx-auto text-center">
+<div class="rounded-xl bg-gray-100 dark:bg-[#192233] border border-gray-300 dark:border-white/10 p-8 md:p-12">
+<span class="material-symbols-outlined text-primary !text-6xl mb-4">rocket_launch</span>
+<h2 class="text-3xl md:text-4xl font-black mb-4">Ready to Transform Your Store?</h2>
+<p class="text-gray-900 dark:text-gray-600 dark:text-white/70 text-lg mb-8">Join the future of retail in Oman. Schedule a personalized demo and see how Jiffy can revolutionize your checkout experience.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary hover:bg-primary/90 transition-colors text-white font-bold">
+Request a Demo
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a href="features.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-gray-300 dark:border-white/20 hover:border-primary transition-colors text-gray-900 dark:text-white font-bold">
+View Features
+</a>
+</div>
+<p class="text-gray-500 dark:text-white/50 text-sm mt-6">For retail business owners in Oman</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-16 py-8 border-t border-gray-300 dark:border-white/10">
+<div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 px-4">
+<p class="text-sm text-gray-900 dark:text-gray-600 dark:text-white/60 text-center sm:text-left">© 2024 Jiffy. All Rights Reserved. Made in Oman.</p>
+<div class="flex items-center gap-4 text-gray-900 dark:text-gray-700 dark:text-white/80">
+<a class="hover:text-primary transition-colors" href="https://www.instagram.com/jiffy.om" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+<svg class="feather feather-instagram" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+</a>
+<a class="text-sm hover:text-primary transition-colors" href="mailto:hello@jiffy.om">om.jiffy@gmail.com</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
