@@ -70,7 +70,7 @@
 </button>
 </div>
 <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]" href="contact.html">
-<span class="truncate">Request a Demo</span>
+<span class="truncate">Request a Pilot</span>
 </a>
 </div>
 </header>
@@ -80,7 +80,7 @@
 <div class="w-full max-w-2xl mx-auto flex flex-col gap-8 text-center">
 <div class="flex flex-col gap-3">
 <h1 class="text-4xl md:text-5xl font-black tracking-tight">Partner with Jiffy</h1>
-<p class="text-gray-900 dark:text-gray-700 dark:text-white/80 text-lg">Transform your retail store with Oman's smart checkout solution. Request a personalized demo for your business.</p>
+<p class="text-gray-900 dark:text-gray-700 dark:text-white/80 text-lg">Transform your retail store with Oman's smart checkout solution. Request a personalized Pilot for your business.</p>
 <p class="text-primary text-sm font-semibold">For Retail Business Owners & Decision Makers</p>
 </div>
 <!-- Value Prop -->
@@ -126,6 +126,34 @@
 <option value="grocery">Grocery Store</option>
 <option value="other">Other Retail</option>
 </select>
+</div>
+<div>
+  <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="meeting_reason">
+    Reason for Meeting
+  </label>
+  <select
+    class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white focus:border-primary focus:ring-primary transition-colors"
+    id="meeting_reason"
+    name="meeting_reason"
+  >
+    <option value="">Select a reason</option>
+    <option value="pilot_demo">Request a Pilot / Demo</option>
+    <option value="pricing">Pricing & Packages</option>
+    <option value="technical">Technical Integration</option>
+    <option value="partnership">Partnership Opportunity</option>
+    <option value="general">General Inquiry</option>
+  </select>
+</div>
+<div>
+  <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="meeting_time">
+    Preferred Time to Meet
+  </label>
+  <input
+    class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:border-primary focus:ring-primary transition-colors"
+    id="meeting_time"
+    name="meeting_time"
+    type="datetime-local"
+  />
 </div>
 <div>
 <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="message">Tell Us About Your Business</label>
