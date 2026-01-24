@@ -122,15 +122,16 @@
 <input class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:border-primary focus:ring-primary transition-colors" id="phone" name="phone" type="tel"/>
 </div>
 <div>
-<label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="storetype">Store Type</label>
-<select class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:border-primary focus:ring-primary transition-colors" id="storetype" name="storetype">
-<option value="">Select your store type</option>
-<option value="supermarket">Supermarket/Hypermarket</option>
-<option value="minimart">Mini-Mart</option>
-<option value="convenience">Convenience Store</option>
-<option value="grocery">Grocery Store</option>
-<option value="other">Other Retail</option>
-</select>
+  <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="storetype">
+    Store Type
+  </label>
+  <input
+    class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:border-primary focus:ring-primary transition-colors"
+    id="storetype"
+    name="storetype"
+    type="text"
+    placeholder="e.g. Supermarket, Mini-mart, Electronics store"
+  />
 </div>
 <div>
   <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="meeting_time">
@@ -147,20 +148,14 @@
   <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="meeting_reason">
     Reason for Meeting
   </label>
-  <select
-    class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white focus:border-primary focus:ring-primary transition-colors"
+  <textarea
+    class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:border-primary focus:ring-primary transition-colors"
     id="meeting_reason"
     name="meeting_reason"
-  >
-    <option value="">Select a reason</option>
-    <option value="pilot_demo">Request a Pilot / Demo</option>
-    <option value="pricing">Pricing & Packages</option>
-    <option value="technical">Technical Integration</option>
-    <option value="partnership">Partnership Opportunity</option>
-    <option value="general">General Inquiry</option>
-  </select>
+    rows="3"
+    placeholder="Briefly describe the purpose of the meeting"
+  ></textarea>
 </div>
-
 <div>
 <label class="block text-sm font-medium text-gray-900 dark:text-white/90 mb-2" for="message">Tell Us About Your Business</label>
 <textarea class="block w-full rounded-lg border-gray-300 dark:border-white/10 bg-white dark:bg-background-dark p-3 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/40 focus:border-primary focus:ring-primary transition-colors" id="message" name="message" rows="5" placeholder="Number of checkout lanes, daily customer volume, specific challenges you're facing..."></textarea>
